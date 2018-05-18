@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
+
 # Copyright (c) 2015, SAN Brasil S/A and contributors
 # For license information, please see license.txt
 
