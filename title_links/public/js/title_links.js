@@ -336,7 +336,7 @@ frappe.form.formatters.Link = function (value, docfield, options, doc) {
 	}
 
 	if (docfield && docfield.link_onclick) {
-		return repl('<a onclick="%(onclick)s">%(value)s</a>', { onclick: docfield.link_onclick.replace(/"/g, '&quot;'), title: title });
+		return repl('<a onclick="%(onclick)s">%(value)s</a>', { onclick: docfield.link_onclick.replace(/"/g, '&quot;'), value: title });
 
 	} else if (docfield && doctype) {
 		return repl('<a class="grey" href="#Form/%(doctype)s/%(name)s" data-doctype="%(doctype)s">%(label)s</a>', {
